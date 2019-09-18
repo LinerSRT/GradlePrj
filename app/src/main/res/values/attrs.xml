@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="showCountIndicatorHorizontal" format="integer" />
+    <attr name="indicatorNormalColorHorizontal" format="color" />
+    <attr name="indicatorHighColorHorizontal" format="color" />
+    <attr name="indicatorRadiusHorizontal" format="dimension" />
+    <attr name="indicatorPaddingHorizontal" format="dimension" />
+    <attr name="indicatorMarginHorizontal" format="dimension" />
+    <attr name="panningDurationInMs" format="integer" />
+    <attr name="CustomName" format="string" />
+    <attr name="CustomIconName" format="string" />
+    <attr name="Intent" format="string" />
+    <attr name="Type" format="integer" />
+    <attr name="style" format="string" />
+    <attr name="progress_color" format="color" />
+    <attr name="matchChildWidth" format="reference" />
+
+    <declare-styleable name="HorizontalViewPager">
+        <attr name="showIndicator" format="boolean" />
+        <attr name="showCountIndicator" format="integer" />
+        <attr name="indicatorNormalColor" format="color"/>
+        <attr name="indicatorHighColor" format="color" />
+        <attr name="indicatorRadius" format="dimension" />
+        <attr name="indicatorPadding" format="dimension" />
+        <attr name="indicatorMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalViewPager">
+        <attr name="showIndicator2" format="boolean" />
+        <attr name="showCountIndicator2" format="integer" />
+        <attr name="indicatorNormalColor2" format="color" />
+        <attr name="indicatorHighColor2" format="color" />
+        <attr name="indicatorRadius2" format="dimension" />
+        <attr name="indicatorPadding2" format="dimension" />
+        <attr name="indicatorMargin2" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuItem">
+        <attr name="is_app_item" format="boolean" />
+        <attr name="item_translation_max" format="dimension" />
+    </declare-styleable>
+</resources>

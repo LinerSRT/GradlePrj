@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="ImageSwitch">
+        <item name="android:thumb">@drawable/switch_btn_thumb</item>
+        <item name="track">@drawable/switch_btn_track</item>
+        <item name="switchMinWidth">45.0dip</item>
+        <item name="thumbTextPadding">30.0dip</item>
+    </style>
+    <style name="SportTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowBackground">@color/cardview_dark_background</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kct.sports.view.HorizontalViewPager android:id="@+id/H_viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:showCountIndicator="2" app:indicatorNormalColor="@color/sports_main_indicator_normal_color" app:indicatorHighColor="@color/sports_main_progress_start_color" app:indicatorRadius="@dimen/sports_main_indicator_radius" app:indicatorPadding="@dimen/sports_main_indicator_padding" app:indicatorMargin="@dimen/sports_main_indicator_margin" />
+</LinearLayout>

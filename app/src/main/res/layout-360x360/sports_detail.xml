@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/run_timer_layout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Chronometer android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@+id/chronometer_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="@string/formate_time" />
+                    <com.kct.sports.view.BeBasTextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/detail_one_data" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" />
+                    <com.kct.sports.view.LantingTextView android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@+id/detail_one_data_unit" android:paddingLeft="20.0dip" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" />
+                </LinearLayout>
+                <com.kct.sports.view.LantingTextView android:textSize="11.0sp" android:textColor="#ff999999" android:layout_gravity="right" android:id="@+id/detail_one_data_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0">
+            <FrameLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip">
+                    <Chronometer android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@+id/chronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="@string/formate_time" />
+                    <Chronometer android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@+id/fake_chronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="@string/formate_time" />
+                    <com.kct.sports.view.BeBasTextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/detail_two_data" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" />
+                    <com.kct.sports.view.LantingTextView android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@+id/detail_two_data_unit" android:paddingLeft="10.0dip" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.kct.sports.view.LantingTextView android:textSize="11.0sp" android:textColor="#ff999999" android:layout_gravity="right" android:id="@+id/detail_two_data_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+                    <com.kct.sports.view.BeBasTextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/detail_three_data" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" />
+                    <com.kct.sports.view.LantingTextView android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@+id/detail_three_data_unit" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" />
+                </LinearLayout>
+                <com.kct.sports.view.LantingTextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@+id/detail_three_data_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kct.sports.view.MarqueeTextView android:textSize="11.0sp" android:textColor="#ff999999" android:ellipsize="marquee" android:paddingBottom="23.0dip" android:fadingEdge="horizontal" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/turn_left" android:singleLine="true" android:drawableRight="@drawable/arrow_left" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

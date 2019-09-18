@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_download_button" android:layout_width="340.0dip" android:layout_height="126.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.kct.sports.view.MarqueeTextView android:textSize="11.0sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@+id/model" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.kct.sports.view.MarqueeTextView android:textSize="13.0sp" android:textColor="#ff94979c" android:ellipsize="marquee" android:gravity="center" android:id="@+id/record_time" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.5">
+                <TextView android:textSize="47.0sp" android:textColor="#ff00a8ff" android:id="@+id/history_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff94979c" android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/kilometer" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.6">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/history_pace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/pace" android:drawablePadding="12.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/history_kcal_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/energy" android:drawablePadding="12.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/history_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/time" android:drawablePadding="12.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/right_click" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="24.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <com.kct.sports.view.MarqueeTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/top_item" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/velocity" android:singleLine="true" />
+                <com.kct.sports.view.Din1451TextView android:textSize="28.0sp" android:textColor="@color/text_color" android:id="@+id/detail_two_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@+id/top_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/km_per_hours" />
+            </LinearLayout>
+            <View android:layout_width="6.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="70.0dip" android:layout_weight="0.5">
+                <com.kct.sports.view.MarqueeTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/right_item" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/pace" android:singleLine="true" />
+                <com.kct.sports.view.Din1451TextView android:textSize="28.0sp" android:textColor="@color/text_color" android:id="@+id/detail_two_pace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@+id/right_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minute_per_km" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center" android:background="#ff0e4359" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="33.0dip" />
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="25.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <com.kct.sports.view.MarqueeTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/left_item" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_count" android:singleLine="true" />
+                <com.kct.sports.view.Din1451TextView android:textSize="28.0sp" android:textColor="@color/text_color" android:id="@+id/detail_two_step_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+                <com.kct.sports.view.MarqueeTextView android:textSize="10.0sp" android:textColor="#ff999999" android:ellipsize="marquee" android:id="@+id/left_unit" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/step" android:singleLine="true" />
+            </LinearLayout>
+            <View android:layout_width="6.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="70.0dip" android:layout_weight="0.5">
+                <com.kct.sports.view.MarqueeTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/bottom_item" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/energy_cost" android:singleLine="true" />
+                <com.kct.sports.view.Din1451TextView android:textSize="28.0sp" android:textColor="@color/text_color" android:id="@+id/detail_two_energy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@+id/bottom_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kcal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

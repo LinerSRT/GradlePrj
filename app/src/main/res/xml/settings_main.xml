@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/setting_title" android:key="setting_title" />
+    <com.kct.sports.view.PerOneKmSwitchPreference android:icon="@drawable/perkm_alarm" android:title="@string/alarm_per_km" android:key="perKm_alarm" android:summaryOn="On" android:summaryOff="Off" />
+    <com.kct.sports.view.HeartRateSwitchPreference android:icon="@drawable/heartrate" android:title="@string/alarm_heartrate" android:key="heartrate_" android:summary="高于1080bmp提醒" android:summaryOff="Off" />
+    <com.kct.sports.view.TargetTimeSwitchPreference android:icon="@drawable/target_time" android:title="@string/target_time_take" android:key="target_time" android:summaryOff="Off" />
+    <com.kct.sports.view.TargetDistanceSwitchPreference android:icon="@drawable/target_distance" android:title="@string/target_distance" android:key="target_distance" android:summaryOff="Off" />
+    <com.kct.sports.view.PaceCheckSwitchPreference android:icon="@drawable/pace_alarm" android:title="@string/alarm_pace" android:key="pace_alarm" android:summaryOff="Off" />
+    <com.kct.sports.view.SportsCheckSwitchPreference android:icon="@drawable/run_alarm" android:title="@string/alarm_sports" android:key="run_alarm" android:summaryOff="Off" />
+    <com.kct.sports.view.LowPowerSwitchPreference android:icon="@drawable/lowpower" android:title="@string/low_power" android:key="lowpower" android:summaryOn="On" android:summaryOff="Off" />
+   <Preference android:layout="@layout/settings_footerview" android:key="booter_view" />
+</PreferenceScreen>

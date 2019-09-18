@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kct.sports.mianui.MenuVerticalItem android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="@dimen/menu_vertical_start_gap" android:paddingTop="-8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/applist_item_height" app:is_app_item="true" app:item_translation_max="@dimen/menu_vertical_icon_translation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kct.sports.mianui.MenuIconImage android:id="@+id/applist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_width="@dimen/menu_vertical_text_gap" android:layout_height="@dimen/menu_vertical_text_gap" />
+    <com.kct.sports.mianui.ScrollerTextView android:textSize="@dimen/menu_vertical_textsize" android:textColor="@android:color/white" android:id="@+id/applist_name" android:layout_width="@dimen/applist_item_textwidth" android:layout_height="wrap_content" />
+</com.kct.sports.mianui.MenuVerticalItem>

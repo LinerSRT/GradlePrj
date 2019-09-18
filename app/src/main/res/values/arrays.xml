@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_entries">
+        <item>Colorful</item>
+        <item>Black and White</item>
+    </string-array>
+    <string-array name="list_entries_value">
+        <item>xuanduocai</item>
+        <item>heibai</item>
+    </string-array>
+    <string-array name="list_entries_value2">
+        <item>xuanduocai</item>
+        <item>heibai</item>
+    </string-array>
+</resources>

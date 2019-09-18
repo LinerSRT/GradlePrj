@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kct.sports" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <permission android:name="com.android.permission.RECEIVE_KCT_SPORTS_STEP_COUNT_BROADCAST"/>
+    <uses-permission android:name="com.android.permission.RECEIVE_KCT_SPORTS_STEP_COUNT_BROADCAST"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="ANDROID.PERMISSION.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/sport_run_outdoor"
+        android:name="com.kct.sports.base.NewApplication"
+        android:allowBackup="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCisWTinP49oBU0YCPZHD7S6KIzRdaq1Bc"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="cd6c7ddf62bafe1251e5893bb6d98689"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:theme="@style/SportTheme" android:label="@string/app_name" android:name="com.kct.sports.mianui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.kct.sports.OtherFragment.SearchGPSActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="kct.intent.action.SearchGPSActivity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtherFragment.ReadyStartActivity" android:launchMode="singleTask"/>
+        <activity android:name=".OtherFragment.SportsSwitchActivity"/>
+        <activity android:name=".Run.HorizontalMainActivity"/>
+        <activity android:name=".setting.DetailSetActivity"/>
+        <activity android:name=".setting.TimeToRunActivity"/>
+        <activity android:name=".setting.RemindActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/SportTheme" android:name=".History.DetailHorizontalActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/SportTheme" android:label="@string/history_info" android:icon="@drawable/sport_icon_history" android:name=".History.HistoryMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/SportTheme" android:label="@string/display_settings" android:icon="@drawable/sport_icon_history" android:name="com.kct.sports.setting.SportsSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.kct.sports.provider.StepCountService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.kct.minifundo.stepcount.StepCountService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.kct.sports.provider.DateProviderService" android:exported="false"/>
+        <service android:name="com.kct.sports.Trace.LocationSvc" android:exported="false"/>
+        <receiver android:name="com.kct.sports.setting.AlarmReceiver" android:process=":remote"/>
+        <provider android:name="com.kct.sports.provider.SportsProvider" android:exported="true" android:authorities="com.kct.sports.provider.sportsMainDate"/>
+        <provider android:name="com.kct.sports.provider.TraceProvider" android:exported="true" android:authorities="com.kct.sports.provider.sportsTraceDate"/>
+        <provider android:name="com.kct.sports.provider.HVSProvider" android:exported="true" android:authorities="com.kct.sports.provider.sportsHVSDate"/>
+        <provider android:name="com.kct.sports.provider.PaceProvider" android:exported="true" android:authorities="com.kct.sports.provider.sportsPaceDate"/>
+        <receiver android:name="com.kct.sports.provider.Sprotbroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

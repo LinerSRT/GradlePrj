@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/sports_bg" android:background="#e0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.kct.sports.view.PanningView android:id="@+id/panningView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_defalut2" custom:panningDurationInMs="2000" />
+    <ImageView android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="38.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.kct.sports.view.StatusIcon android:id="@+id/search_or_pass_gps" android:background="@drawable/pass_gps" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/pass_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pass" />
+    </FrameLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/sport_hint" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/place_to_search" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/gps_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sport_hint">
+        <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_count_text" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/blue" android:id="@+id/gps_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_count" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gps_ll">
+        <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_count_calibration" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/blue" android:id="@+id/gps_count_calibration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_count" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" app:srcCompat="@drawable/loc" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ffffffff" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wait_gps" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

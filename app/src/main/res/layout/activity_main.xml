@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kct.sports.mianui.MenuVerticalBg android:id="@+id/menu_virtical_recyleview_bg" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kct.sports.mianui.MenuVirticalRecyleView android:layout_gravity="center" android:id="@+id/menu_virtical_recyleview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</FrameLayout>
